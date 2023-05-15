@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    /*background-color: rgb(48, 101, 101);*/
+    background-color: rgb(238, 235, 235);
+}
+h1{
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    color: black;
+}
+main{
+    display: flex;
+    min-height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+.table-container{
+    width: 80%;
+}
+.table-container table{
+    width: 100%;
+}
+.table-container table thead{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+}
+.table-container table thead tr td{
+    padding: 15px;
+    background-color: orange;
+    color: white;
+}
+.table-container table tbody tr td{
+    text-align: center;
+    padding: 15px;
+    color: black;
+    font-size: 1.5rem;
+    border-top: 1px solid orange;
+    background-color: white;
+}
+
+.action-btn{
+    display: inline-block;
+    width: 90px;
+    padding: 10px 15px;
+    margin: 8px;
+    color: white;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.btn-ed{
+    background-color: rgb(9, 114, 206);
+}
+
+.btn-de{
+    background-color: rgb(229, 26, 26);
+}
+.action-btn:hover{
+    background-color: rgb(238, 103, 6);
+}
+.btn-ed:hover{
+    background-color: rgb(10, 131, 237);
+}
+.btn-de:hover{
+    background-color: rgb(246, 14, 14);;
+}
+
+.add{
+    width: 200px;
+    text-align: center;
+    background-color: rgb(255, 98, 0);
+}
+.add .icon{
+    margin-right: 5px;
+}
+tbody tr td img{
+    width:160px; border-radius:8px;
+}

@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+:root{
+    --main-color:orange;
+    --nav-color: #333;
+}
+/*start header style*/
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+
+}
+.container{
+    background-color: #333;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.header ul{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+    text-transform: capitalize;
+}
+
+.header ul li a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.header ul li .log-in{
+    cursor: pointer;
+}
+.header ul li a:hover{
+    background-color: #222;
+    color: var(--main-color);
+}
+.header h1 a{
+    text-transform: capitalize;
+    color: var(--main-color);
+}
+.header span{
+    margin-left: 10px;
+    
+}
+
+/*start user style*/
+.header ul li .user-profile{
+    display: flex;
+    align-items: center;
+}
+.header ul li .user-profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+/*start  user settings  style*/
+main{
+    display: flex;
+    min-height: calc(100vh - 50px);
+    justify-content: center;
+    background-color:rgb(247, 242, 242);
+    padding: 0;
+}
+/* .user-info-container
+{
+    
+} */
+.form-header{
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.user-info{
+    display: flex;
+    align-items: center;
+    
+}
+.user-info img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+.user-info p{
+    font-size: 1.6rem;
+}
+.user-info .btn{
+    padding:10px 15px;
+    font-size: 1.3rem;
+    background-color: orangered;
+    border-radius: 4px;
+    border:none;
+    outline: none;
+    color: white;
+    margin: 15px 5px;
+    cursor: pointer;
+
+}
+.user-info .btn:hover{
+    background-color: rgb(255, 132, 0);
+}
+.user-info-container .user-info .image{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+.update-settings-container{
+ width: 100vh;
+ min-height: 100%;
+ max-height: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: white;
+ margin-top: 20px;
+ border-radius: 8px;
+ padding: 10px;
+}
+.update-settings-container form input{
+    width: 47vh;
+    height: 40px;
+    border-radius: 6px;
+    outline: none;
+    border:none;
+    background-color:#444;
+    padding: 0 15px;
+    margin: 5px 5px;
+    color: orange;
+    font-size: 1.6rem;
+}
+.update-settings-container form input::placeholder{
+    color: white;
+}
+.update-settings-container .title h1{
+    width: 100%;
+    
+}
+
+.update-settings-container form .oldpass{
+    width: 98%;
+}
+.btn-img{
+  display: none;
+}
+.upload-icon{
+    font-size: 2.2rem;
+    color: rgb(255, 25, 0);
+    cursor: pointer;
+    
+
+}
+.upload-icon span{
+    font-size: 1.3rem;
+}
+.upload-icon i{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.errors{
+    width: 100%;
+    text-align: center;
+    color: red;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* end user settings style */

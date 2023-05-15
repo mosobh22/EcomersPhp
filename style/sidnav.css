@@ -1,0 +1,64 @@
+
+*{
+    text-decoration: none;
+}
+/* start sidnav bar style */
+nav{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+  
+    z-index: 998;
+}
+.nav-none{
+    display: none;
+}
+nav .sidnav-container{
+    background-color:#333;
+    height: 100%;
+}
+nav .sidnav-container .logo{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+nav .sidnav-container .logo i{
+    margin-right: 3px;
+    
+}
+nav a{
+    color:orange;
+}
+nav .sidnav-container ul li a{
+    text-decoration: none;
+    color: goldenrod;
+    display: block;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 20px 0px 0px 20px;
+    
+
+}
+
+nav .sidnav-container ul li a:hover{
+    background-color: #000;
+    color: orangered;
+}
+nav .sidnav-container ul{
+    margin-top: 50px;
+    text-align: center;
+}
+nav .sidnav-container ul li{
+    width: 100%;
+}
+nav .sidnav-container ul li .activ{
+    background-color: #111;
+    color: orangered;
+}
+
+/* end sidnav bar style */ 

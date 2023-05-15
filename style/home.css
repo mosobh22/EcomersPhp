@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+:root{
+    --main-color:orange;
+    --nav-color: #333;
+}
+/*start header style*/
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+
+}
+.container{
+    background-color: #333;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.header ul{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+    text-transform: capitalize;
+}
+
+.header ul li a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.header ul li .log-in{
+    cursor: pointer;
+}
+.header ul li a:hover{
+    background-color: #222;
+    color: var(--main-color);
+}
+.header h1 a{
+    text-transform: capitalize;
+    color: var(--main-color);
+}
+.header span{
+    margin-left: 10px;
+    
+}
+
+/*start user style*/
+.header ul li .user-profile{
+    display: flex;
+    align-items: center;
+}
+.header ul li .user-profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+/*end uer style*/
+
+
+
+/*end header style*/
+
+
+/*start search section style*/
+.search-container{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/search-background.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.search-container .search{
+    width: 50%;
+    position: relative;
+}
+.search-container .search input{
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    border:none;
+    padding: 0 30px;
+    font-size: 1.4rem;
+    outline: none;
+    
+}
+.search-container .search button{
+   position: absolute;
+   width: 60px;
+   height: 40px;
+   right: 0px; 
+   top: 0px;
+   outline: none;
+   border: none;
+   border-radius: 0 8px 0 8px;
+   font-size: 1.3rem;
+   transition: scale .4s ease-in-out;
+   background-color: var(--main-color);
+   color: white;
+   font-weight: bold;
+   cursor: pointer;
+}
+/*end search section style*/
+
+
+
+/* start <main> product section style*/
+.products-container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.products-container h1{
+    margin-bottom: 5px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.products-card-container{
+    width: 80%;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+}
+
+.products-container .products-card-container .product-card{
+    width: 200px;
+    min-height: 100px;
+    max-height: 400px;
+    background-color: white;
+    color: white;
+    box-shadow: 5px 5px 15px;
+    border-radius: 8px;
+    color: black;
+}
+.product-card{
+    margin: 15px;
+}
+
+.product-card .product-img img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product-card .product-content{
+    padding: 15px;
+    text-align: center;
+}
+.product-card .product-content h2{
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.product-card .product-content p{
+    overflow: hidden;
+}
+.product-card .product-action{
+    text-align: center;
+}
+.product-card .product-action button{
+    width: 80px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    font-size: 0.9rem;
+    background-color: var(--main-color);
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.product-card .product-action button:hover{
+    background-color: rgb(236, 90, 11);
+}
+
+/* end <main> product section style*/
+
+
+
+
+/*start footer style*/
+.footer{
+    background-color: #222;
+    color: white;
+    text-transform: capitalize;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+/* end footer style */

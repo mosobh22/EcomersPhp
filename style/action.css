@@ -1,0 +1,141 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(238, 235, 235);
+}
+.action-btn{
+    display: inline-block;
+    width: 80px;
+    padding: 10px 15px;
+    margin: 10px;
+    color: white;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+
+.errors{
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.6);
+    font-size: 1.5rem;
+    color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+.container{
+    width: 80%;
+    min-height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+    width: 50%;
+    min-height: 30%;
+    max-height: 100%;
+    background-color: white;
+    padding: 15px;
+    border-radius: 4px;
+}
+.form h1{
+    padding: 10px 0px;
+    border-bottom: 2px solid gray;
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    height: 100%;
+}
+.form form input[type="text"]{
+    height: 40px;
+    padding: 10px;
+    font-size: 1.4rem;
+    border-radius: 8px;
+    outline: none;
+    transition: scale 0.5s ease-out;
+}
+.form form input[type="text"]:focus{
+    transform: scale(1.1);
+
+}
+.form form input[type='submit']{
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    background-color: orangered;
+    font-size: 1.3rem;
+    color: white;
+    cursor: pointer;
+}
+
+.form form input[type='submit']:hover{
+    background-color: rgb(189, 121, 20); 
+}
+
+.description{
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 30%;
+    font-size: 1.4rem;
+}
+
+.upload{
+    display: none;
+}
+.upload-icon{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.upload-icon span{
+    font-size: 1.2rem;
+    color: gray;
+}
+.icon{
+    font-size: 2rem;
+    color: gray;
+    margin-right: 5px;
+}
+
+.img{
+    margin:10px 0px;
+}
+.btn{
+    width: 50%;
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+.inner-btn{
+    display: block;
+    width: 80px;
+    padding: 10px 15px;
+    margin: 10px;
+    color: white;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: capitalize;
+    text-align: center;
+    background-color: rgb(255, 98, 0);
+}
+.inner-btn:hover{
+    background-color: rgb(255, 30, 0);
+}
+
+.product-image{
+    width: 150px;
+}

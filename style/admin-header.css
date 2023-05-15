@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+:root{
+    --main-color:orange;
+    --nav-color: #333;
+}
+/*start header style*/
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+    
+
+}
+.container{
+    background-color: #333;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.header{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.header ul{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+    text-transform: capitalize;
+}
+
+.header ul li a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.header ul li .log-in{
+    cursor: pointer;
+}
+.header ul li a:hover{
+    background-color: #222;
+    color: var(--main-color);
+}
+.header h1 a{
+    text-transform: capitalize;
+    color: var(--main-color);
+}
+.header span{
+    margin-left: 10px;
+    
+}
+
+/*start user style*/
+.header ul li .user-profile{
+    display: flex;
+    align-items: center;
+}
+.header ul li .user-profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+/*end uer style*/
+
+
+
+/*end header style*/
